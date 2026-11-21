@@ -207,10 +207,8 @@ REMOTE_AUTH_AUTO_CREATE_USER = True
 REMOTE_AUTH_DEFAULT_GROUPS = []
 REMOTE_AUTH_DEFAULT_PERMISSIONS = {}
 
-# This repository is used to check whether there is a new release of NetBox available. Set to None to disable the
-# version check or use the URL below to check for release in the official NetBox repository.
-RELEASE_CHECK_URL = None
-# RELEASE_CHECK_URL = 'https://api.github.com/repos/netbox-community/netbox/releases'
+# Check the fork for new NetBox releases. Set to None to disable release checks.
+RELEASE_CHECK_URL = 'https://api.github.com/repos/aa70027/netbox/releases'
 
 # The file path where custom reports will be stored. A trailing slash is not needed. Note that the default value of
 # this setting is derived from the installed location.
