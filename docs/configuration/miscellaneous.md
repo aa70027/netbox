@@ -267,9 +267,9 @@ If no queue is defined the queue named `default` will be used.
 
 ## RELEASE_CHECK_URL
 
-Default: `None` (disabled)
+Default: `'https://api.github.com/repos/aa70027/netbox/releases'`
 
-This parameter defines the URL of the repository that will be checked for new NetBox releases. When a new release is detected, a message will be displayed to administrative users on the home page. This can be set to the official repository (`'https://api.github.com/repos/netbox-community/netbox/releases'`) or a custom fork. Set this to `None` to disable automatic update checks.
+NetBox periodically checks this GitHub Releases endpoint for newer releases. When a new release is detected, administrative users see a message on the home page. Existing values in `configuration.py` override this default. Set the parameter to `None` to disable checks. Publish a GitHub Release in the fork to make a version discoverable. The checker only reports available versions.
 
 !!! note
     The URL provided **must** be compatible with the [GitHub REST API](https://docs.github.com/en/rest).
