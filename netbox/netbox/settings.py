@@ -11,7 +11,6 @@ from django.contrib.messages import constants as messages
 from django.core.exceptions import ImproperlyConfigured, ValidationError
 from django.core.validators import URLValidator
 from django.utils.module_loading import import_string
-from django.utils.translation import gettext_lazy as _
 
 from core.exceptions import IncompatiblePluginError
 from netbox.config import PARAMS as CONFIG_PARAMS
@@ -161,7 +160,6 @@ INTERNAL_IPS = getattr(configuration, 'INTERNAL_IPS', ('127.0.0.1', '::1'))
 ISOLATED_DEPLOYMENT = getattr(configuration, 'ISOLATED_DEPLOYMENT', False)
 JINJA_ENVIRONMENT_PARAMS = getattr(configuration, 'JINJA_ENVIRONMENT_PARAMS', [])
 JINJA_FILTERS = getattr(configuration, 'JINJA_FILTERS', getattr(configuration, 'JINJA2_FILTERS', {}))
-LANGUAGE_CODE = getattr(configuration, 'DEFAULT_LANGUAGE', 'en-us')
 LANGUAGE_COOKIE_PATH = CSRF_COOKIE_PATH
 LOGGING = getattr(configuration, 'LOGGING', {})
 LOGIN_PERSISTENCE = getattr(configuration, 'LOGIN_PERSISTENCE', False)
@@ -917,24 +915,12 @@ RQ_QUEUES.update({
 
 # Supported translation languages
 LANGUAGES = (
-    ('cs', _('Czech')),
-    ('da', _('Danish')),
-    ('de', _('German')),
-    ('en', _('English')),
-    ('es', _('Spanish')),
-    ('fr', _('French')),
-    ('it', _('Italian')),
-    ('ja', _('Japanese')),
-    ('ko', _('Korean')),
-    ('lv', _('Latvian')),
-    ('nl', _('Dutch')),
-    ('pl', _('Polish')),
-    ('pt', _('Portuguese')),
-    ('ru', _('Russian')),
-    ('tr', _('Turkish')),
-    ('uk', _('Ukrainian')),
-    ('zh', _('Chinese')),
+    ('en', 'English'),
+    ('fa', 'فارسی'),
 )
+LANGUAGE_CODE = getattr(configuration, 'DEFAULT_LANGUAGE', 'en-us')
+if LANGUAGE_CODE.lower().split('-', 1)[0] not in dict(LANGUAGES):
+    LANGUAGE_CODE = 'en-us'
 LOCALE_PATHS = (
     BASE_DIR + '/translations',
 )

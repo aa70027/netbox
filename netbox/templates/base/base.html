@@ -4,9 +4,12 @@
 {% load i18n %}
 {% load django_htmx %}
 {% load plugins %}
+{% get_current_language as current_language %}
+{% get_current_language_bidi as current_language_bidi %}
 <!DOCTYPE html>
 <html
-  lang="en"
+  lang="{{ current_language }}"
+  dir="{% if current_language_bidi %}rtl{% else %}ltr{% endif %}"
   data-netbox-url-name="{{ request.resolver_match.url_name }}"
   data-netbox-version="{{ settings.VERSION }}"
   {% if request.user.is_authenticated %}
