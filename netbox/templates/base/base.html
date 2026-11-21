@@ -50,6 +50,9 @@
       href="{% static_with_params 'netbox.css' v=settings.RELEASE.version %}"
       onerror="window.location='{% url 'media_failure' %}?filename=netbox.css'"
     />
+    {% if current_language == "fa" or current_language|slice:":3" == "fa-" %}
+      <link rel="stylesheet" href="{% static_with_params 'fonts/vazir/vazir.css' v=settings.RELEASE.version %}" />
+    {% endif %}
     <link rel="icon" type="image/png" href="{% static 'netbox.ico' %}" />
     <link rel="apple-touch-icon" type="image/png" href="{% static 'netbox_touch-icon-180.png' %}" />
 

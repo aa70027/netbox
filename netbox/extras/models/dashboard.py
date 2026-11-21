@@ -42,6 +42,13 @@ class Dashboard(models.Model):
         """
         widgets = []
         for grid_item in self.layout:
+            config = self.config[str(grid_item['id'])]
+            # Older dashboards may still contain the retired default news feed.
+            if (
+                config['class'] == 'extras.RSSFeedWidget'
+                and (config.get('config') or {}).get('feed_url') == 'https://api.netbox.oss.netboxlabs.com/v1/newsfeed/'
+            ):
+                continue
             widget = self.get_widget(grid_item['id'])
             widget.set_layout(grid_item)
             widgets.append(widget)

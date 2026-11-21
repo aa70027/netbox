@@ -145,18 +145,6 @@ DEFAULT_DASHBOARD = [
         }
     },
     {
-        'widget': 'extras.RSSFeedWidget',
-        'width': 4,
-        'height': 4,
-        'title': gettext_noop('NetBox News'),
-        'config': {
-            'feed_url': 'https://api.netbox.oss.netboxlabs.com/v1/newsfeed/',
-            'max_entries': 10,
-            'cache_timeout': 14400,
-            'requires_internet': True,
-        }
-    },
-    {
         'widget': 'extras.ObjectCountsWidget',
         'width': 4,
         'height': 3,

@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Vazir;
+  src: url("Vazir-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("Vazir-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --tblr-font-sans-serif: Vazir, system-ui, sans-serif;
+  --bs-font-sans-serif: Vazir, system-ui, sans-serif;
+}
+
+body {
+  font-family: Vazir, system-ui, sans-serif;
+}
