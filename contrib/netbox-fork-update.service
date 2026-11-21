@@ -1,0 +1,10 @@
+[Unit]
+Description=Install a published release from aa70027/netbox
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+StateDirectory=netbox-fork-updater
+StateDirectoryMode=0700
+ExecStart=/usr/bin/python3 /opt/netbox/scripts/netbox-fork-updater.py
