@@ -175,7 +175,9 @@ PLUGINS_CATALOG_CONFIG = getattr(configuration, 'PLUGINS_CATALOG_CONFIG', {})
 PROXY_ROUTERS = getattr(configuration, 'PROXY_ROUTERS', ['utilities.proxy.DefaultProxyRouter'])
 QUEUE_MAPPINGS = getattr(configuration, 'QUEUE_MAPPINGS', {})
 REDIS = getattr(configuration, 'REDIS')  # Required
-RELEASE_CHECK_URL = getattr(configuration, 'RELEASE_CHECK_URL', None)
+RELEASE_CHECK_URL = getattr(
+    configuration, 'RELEASE_CHECK_URL', 'https://api.github.com/repos/aa70027/netbox/releases'
+)
 REMOTE_AUTH_AUTO_CREATE_GROUPS = getattr(configuration, 'REMOTE_AUTH_AUTO_CREATE_GROUPS', False)
 REMOTE_AUTH_AUTO_CREATE_USER = getattr(configuration, 'REMOTE_AUTH_AUTO_CREATE_USER', False)
 REMOTE_AUTH_BACKEND = getattr(configuration, 'REMOTE_AUTH_BACKEND', 'netbox.authentication.RemoteUserBackend')
@@ -258,7 +260,7 @@ if RELEASE_CHECK_URL:
         URLValidator()(RELEASE_CHECK_URL)
     except ValidationError:
         raise ImproperlyConfigured(
-            "RELEASE_CHECK_URL must be a valid URL. Example: https://api.github.com/repos/netbox-community/netbox"
+            "RELEASE_CHECK_URL must be a valid URL. Example: https://api.github.com/repos/aa70027/netbox/releases"
         )
 
 # Validate configured proxy routers
