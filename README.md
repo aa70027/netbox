@@ -1,134 +1,146 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/netbox-community/netbox/main/docs/netbox_logo_light.svg" width="400" alt="NetBox logo" />
-  <p><strong>The cornerstone of every automated network</strong></p>
-  <a href="https://github.com/netbox-community/netbox/releases"><img src="https://img.shields.io/github/v/release/netbox-community/netbox" alt="Latest release" /></a>
-  <a href="https://github.com/netbox-community/netbox/blob/main/LICENSE.txt"><img src="https://img.shields.io/badge/license-Apache_2.0-blue.svg" alt="License" /></a>
-  <a href="https://github.com/netbox-community/netbox/graphs/contributors"><img src="https://img.shields.io/github/contributors/netbox-community/netbox?color=blue" alt="Contributors" /></a>
-  <a href="https://github.com/netbox-community/netbox/stargazers"><img src="https://img.shields.io/github/stars/netbox-community/netbox?style=flat" alt="GitHub stars" /></a>
-  <a href="https://explore.transifex.com/netbox-community/netbox/"><img src="https://img.shields.io/badge/languages-17-blue" alt="Languages supported" /></a>
-  <a href="https://github.com/netbox-community/netbox/actions/workflows/ci.yml"><img src="https://github.com/netbox-community/netbox/actions/workflows/ci.yml/badge.svg" alt="CI status" /></a>
+  <img src="https://raw.githubusercontent.com/netbox-community/netbox/main/docs/netbox_logo_light.svg" width="400" alt="نشان NetBox" />
+  <p><strong>زیرساخت اصلی شبکه‌های خودکار</strong></p>
+  <a href="https://github.com/netbox-community/netbox/releases"><img src="https://img.shields.io/github/v/release/netbox-community/netbox" alt="آخرین انتشار" /></a>
+  <a href="https://github.com/netbox-community/netbox/blob/main/LICENSE.txt"><img src="https://img.shields.io/badge/license-Apache_2.0-blue.svg" alt="مجوز" /></a>
+  <a href="https://github.com/netbox-community/netbox/graphs/contributors"><img src="https://img.shields.io/github/contributors/netbox-community/netbox?color=blue" alt="مشارکت‌کنندگان" /></a>
+  <a href="https://github.com/netbox-community/netbox/stargazers"><img src="https://img.shields.io/github/stars/netbox-community/netbox?style=flat" alt="ستاره‌های گیت‌هاب" /></a>
+  <a href="https://explore.transifex.com/netbox-community/netbox/"><img src="https://img.shields.io/badge/languages-17-blue" alt="زبان‌های پشتیبانی‌شده" /></a>
+  <a href="https://github.com/netbox-community/netbox/actions/workflows/ci.yml"><img src="https://github.com/netbox-community/netbox/actions/workflows/ci.yml/badge.svg" alt="وضعیت یکپارچه‌سازی پیوسته" /></a>
   <p>
-    <strong><a href="https://netboxlabs.com/community/">NetBox Community</a></strong> |
+    <strong><a href="https://netboxlabs.com/community/">انجمن NetBox</a></strong> |
     <strong><a href="https://netboxlabs.com/netbox-cloud/">NetBox Cloud</a></strong> |
     <strong><a href="https://netboxlabs.com/netbox-enterprise/">NetBox Enterprise</a></strong>
   </p>
 </div>
 
-NetBox exists to empower network engineers. For over a decade, it has been the go-to solution for modeling and documenting network infrastructure for thousands of organizations worldwide. NetBox offers a cohesive, extensive, and accessible data model for all things networked. By providing a single robust user interface and programmable APIs for everything from cable maps to device configurations, NetBox serves as the central source of truth for the modern network. It also forms the heart of the [NetBox Labs](https://netboxlabs.com/) platform, alongside [network discovery](https://netboxlabs.com/products/netbox-discovery/), [assurance](https://netboxlabs.com/products/netbox-assurance/), and [observability](https://netboxlabs.com/products/netbox-observability/).
+NetBox برای کمک به مهندسان شبکه ساخته شده است. بیش از یک دهه است که هزاران سازمان در سراسر جهان برای مدل‌سازی و مستندسازی زیرساخت شبکه از آن استفاده می‌کنند. NetBox مدل داده‌ای یکپارچه، گسترده و قابل‌دسترس برای منابع شبکه ارائه می‌دهد. رابط کاربری و APIهای آن همه‌چیز، از نقشهٔ کابل‌کشی تا پیکربندی تجهیزات، را پوشش می‌دهند و NetBox را به مرجع مرکزی داده‌های شبکه تبدیل می‌کنند. NetBox همچنین بخش اصلی پلتفرم [NetBox Labs](https://netboxlabs.com/) است که قابلیت‌های [کشف شبکه](https://netboxlabs.com/products/netbox-discovery/)، [اطمینان از عملکرد شبکه](https://netboxlabs.com/products/netbox-assurance/) و [مشاهده‌پذیری](https://netboxlabs.com/products/netbox-observability/) را هم ارائه می‌دهد.
 
 <p align="center">
-  <a href="#netboxs-role">NetBox's Role</a> |
-  <a href="#why-netbox">Why NetBox?</a> |
-  <a href="#getting-started">Getting Started</a> |
-  <a href="#plugins">Plugins</a> |
-  <a href="#get-involved">Get Involved</a> |
-  <a href="#screenshots">Screenshots</a>
+  <a href="#netboxs-role">نقش NetBox</a> |
+  <a href="#why-netbox">چرا NetBox؟</a> |
+  <a href="#getting-started">شروع کار</a> |
+  <a href="#plugins">افزونه‌ها</a> |
+  <a href="#get-involved">مشارکت</a> |
+  <a href="#screenshots">تصاویر محیط برنامه</a>
 </p>
 
 <p align="center">
-  <img src="docs/media/screenshots/home-light.png" width="600" alt="NetBox user interface screenshot" />
+  <img src="docs/media/screenshots/home-light.png" width="600" alt="تصویر رابط کاربری NetBox" />
 </p>
 
-## NetBox's Role
+<a name="netboxs-role"></a>
 
-NetBox functions as the **source of truth** for your network infrastructure. Its job is to define and validate the _intended state_ of all network components and resources. NetBox does not interact with network nodes directly; rather, it makes this data available programmatically to purpose-built automation, monitoring, and assurance tools. This separation of duties enables the construction of a robust yet flexible automation system.
+## نقش NetBox
+
+NetBox **مرجع اصلی داده‌ها** برای زیرساخت شبکه است. وظیفه‌اش تعریف و اعتبارسنجی _وضعیت مطلوب_ اجزا و منابع شبکه است. NetBox مستقیماً با گره‌های شبکه ارتباط برقرار نمی‌کند و داده‌ها را از طریق API در اختیار ابزارهای خودکارسازی، پایش و ارزیابی شبکه می‌گذارد. این تقسیم وظایف امکان ساخت سامانه‌ای پایدار و انعطاف‌پذیر را فراهم می‌کند.
 
 <p align="center">
-  <img src="docs/media/misc/reference_architecture.png" alt="Reference network automation architecture" />
+  <img src="docs/media/misc/reference_architecture.png" alt="معماری مرجع خودکارسازی شبکه" />
 </p>
 
-The diagram above illustrates the recommended deployment architecture for an automated network, leveraging NetBox as the central authority for network state. This approach allows your team to swap out individual tools to meet changing needs while retaining a predictable, modular workflow.
+نمودار بالا معماری پیشنهادی استقرار شبکهٔ خودکار را نشان می‌دهد که در آن NetBox مرجع مرکزی وضعیت شبکه است. تیم شما می‌تواند ابزارهای مستقل را بر اساس نیاز جایگزین کند و روند کاری ماژولار و قابل پیش‌بینی داشته باشد.
 
-## Why NetBox?
+<a name="why-netbox"></a>
 
-### Comprehensive Data Model
+## چرا NetBox؟
 
-Racks, devices, cables, IP addresses, VLANs, circuits, power, cooling, VPNs, and lots more: NetBox is built for networks. Its comprehensive and thoroughly inter-linked data model provides for natural and highly structured modeling of myriad network primitives that just isn't possible using general-purpose tools. And there's no need to waste time contemplating how to build out a database: Everything is ready to go upon installation.
+### مدل جامع داده
 
-### Focused Development
+مدل یکپارچهٔ NetBox برای رک‌ها، تجهیزات، کابل‌ها، آدرس‌های IP، VLANها، مدارهای ارتباطی، برق، سرمایش، VPNها و دیگر منابع شبکه طراحی شده است. ارتباط میان این اشیا مدل‌سازی ساختارمند شبکه را ممکن می‌کند. مدل داده و پایگاه داده پس از نصب آمادهٔ استفاده‌اند.
 
-NetBox strives to meet a singular goal: Provide the best available solution for making network infrastructure programmatically accessible. Unlike "all-in-one" tools which awkwardly bolt on half-baked features in an attempt to check every box, NetBox is committed to its core function. It focuses on modeling network infrastructure, and provides rich APIs for integrating with tools that excel in other areas of network automation.
+### تمرکز توسعه
 
-### Extensible and Customizable
+هدف NetBox فراهم کردن دسترسی برنامه‌پذیر به داده‌های زیرساخت شبکه است. توسعهٔ آن بر مدل‌سازی زیرساخت متمرکز است و APIهای آن امکان اتصال به ابزارهای تخصصی دیگر را فراهم می‌کنند.
 
-No two networks are exactly the same. Users are empowered to extend NetBox's native data model with custom fields and tags to best suit their unique needs. You can even write your own plugins to introduce entirely new objects and functionality!
+### گسترش‌پذیری و سفارشی‌سازی
 
-### Flexible Permissions
+هر شبکه نیازهای خاص خودش را دارد. می‌توانید مدل دادهٔ NetBox را با فیلدها و برچسب‌های سفارشی گسترش دهید یا برای افزودن انواع جدید اشیا و قابلیت‌ها، افزونه بنویسید.
 
-NetBox includes a fully customizable permission system, which affords administrators incredible granularity when assigning roles to users and groups. Want to restrict certain users to working only with cabling and not be able to change IP addresses? Or maybe each team should have access only to a particular tenant? NetBox enables you to craft roles as you see fit.
+### مجوزهای انعطاف‌پذیر
 
-### Custom Validation & Protection Rules
+مدیران می‌توانند مجوزهای کاربران و گروه‌ها را با جزئیات تعریف کنند. برای نمونه، می‌توان به گروهی فقط اجازهٔ مدیریت کابل‌ها را داد یا دسترسی هر تیم را به داده‌های یک مستأجر مشخص محدود کرد.
 
-The data you put into NetBox is crucial to network operations. In addition to its robust native validation rules, NetBox provides mechanisms for administrators to define their own custom validation rules for objects. Custom validation can be used both to ensure new or modified objects adhere to a set of rules, and to prevent the deletion of objects which don't meet certain criteria. (For example, you might want to prevent the deletion of a device with an "active" status.)
+### اعتبارسنجی و قواعد حفاظتی سفارشی
 
-### Device Configuration Rendering
+در کنار قواعد داخلی، مدیران می‌توانند قواعد اعتبارسنجی سفارشی تعریف کنند تا اشیای تازه یا ویرایش‌شده با قواعد سازمان سازگار باشند یا حذف اشیای خاص، مانند تجهیزی با وضعیت `active`، ممنوع شود.
 
-NetBox can render user-created Jinja2 templates to generate device configurations from its own data. Configuration templates can be uploaded individually or pulled automatically from an external source, such as a Git repository. Rendered configurations can be retrieved via the REST API for application directly to network devices via a provisioning tool such as Ansible or Salt.
+### تولید پیکربندی تجهیزات
 
-### Custom Scripts
+NetBox می‌تواند با استفاده از الگوهای Jinja2 و داده‌های خودش، پیکربندی تجهیزات را تولید کند. الگوها را می‌توانید جداگانه بارگذاری کنید یا از منبعی بیرونی مانند مخزن Git دریافت کنید. پیکربندی تولیدشده از طریق REST API در دسترس است و با ابزارهایی مانند Ansible یا Salt می‌توان آن را روی تجهیزات اعمال کرد.
 
-Complex workflows, such as provisioning a new branch office, can be tedious to carry out via the user interface. NetBox allows you to write and upload custom scripts that can be run directly from the UI. Scripts prompt users for input and then automate the necessary tasks to greatly simplify otherwise burdensome processes.
+### اسکریپت‌های سفارشی
 
-### Automated Events
+برای ساده‌سازی فرایندهایی مانند راه‌اندازی شعبهٔ جدید، می‌توانید اسکریپت سفارشی بنویسید، آن را بارگذاری کنید و از طریق رابط کاربری اجرا کنید. اسکریپت‌ها ورودی را از کاربر می‌گیرند و مراحل لازم را خودکار انجام می‌دهند.
 
-Users can define event rules to automatically trigger a custom script or outbound webhook in response to a NetBox event. For example, you might want to automatically update a network monitoring service whenever a new device is added to NetBox, or update a DHCP server when an IP range is allocated.
+### خودکارسازی رویدادها
 
-### Comprehensive Change Logging
+قواعد رویداد می‌توانند در پاسخ به رویدادهای NetBox اسکریپت سفارشی یا وب‌هوک خروجی را اجرا کنند. برای نمونه، با افزودن تجهیز جدید، سامانهٔ پایش به‌روزرسانی می‌شود یا هنگام تخصیص بازهٔ IP، سرور DHCP به‌روزرسانی می‌شود.
 
-NetBox automatically logs the creation, modification, and deletion of all managed objects, providing a thorough change history. Changes can be attributed to the executing user, and related changes are grouped automatically by request ID.
+### ثبت جامع تغییرات
+
+NetBox ایجاد، ویرایش و حذف همهٔ اشیای تحت مدیریت را ثبت می‌کند. تغییرات به کاربر انجام‌دهنده نسبت داده می‌شوند و تغییرات مرتبط بر اساس شناسهٔ درخواست گروه‌بندی می‌شوند.
 
 > [!NOTE]
-> A complete list of NetBox's myriad features can be found in [the introductory documentation](https://netboxlabs.com/docs/netbox/introduction/).
+> فهرست کامل قابلیت‌ها در [معرفی رسمی NetBox](https://netboxlabs.com/docs/netbox/introduction/) آمده است.
 
-## Getting Started
+<a name="getting-started"></a>
 
-* Just want to explore? Check out [our public demo](https://demo.netbox.dev/) right now!
-* Ready to dive in? Grab your own [NetBox Cloud Free Tier](https://signup.netboxlabs.com/) instance in just a few minutes.
-* The [installation guide](https://netboxlabs.com/docs/netbox/installation/) will help you get your own deployment up and running.
-* Or try the community [Docker image](https://github.com/netbox-community/netbox-docker) for a low-touch, containerized approach.
-* The [official documentation](https://netboxlabs.com/docs/netbox/) offers a comprehensive introduction.
+## شروع کار
 
-## Plugins
+* برای آشنایی با محیط برنامه، [دموی عمومی](https://demo.netbox.dev/) را ببینید.
+* برای استفاده از نسخهٔ میزبانی‌شده، [طرح رایگان NetBox Cloud](https://signup.netboxlabs.com/) را امتحان کنید.
+* برای نصب روی زیرساخت خودتان، [راهنمای نصب فارسی](docs/installation/fa.md) را بخوانید. [راهنمای رسمی نصب](https://netboxlabs.com/docs/netbox/installation/) هم در دسترس است.
+* برای استقرار کانتینری، از [تصویر Docker جامعهٔ کاربران](https://github.com/netbox-community/netbox-docker) استفاده کنید.
+* [مستندات رسمی](https://netboxlabs.com/docs/netbox/) جزئیات بیشتری دربارهٔ NetBox ارائه می‌کنند.
 
-NetBox's functionality can be extended through plugins, which add new models, views, and integrations on top of the core application. A few notable plugins include:
+<a name="plugins"></a>
 
-* [NetBox Branching](https://netboxlabs.com/docs/branching/) — Work with isolated, mergeable branches of your NetBox data
-* [NetBox Change Management](https://netboxlabs.com/docs/changes/) — Enforce review and approval policies on changes proposed in branches (Cloud & Enterprise)
-* [NetBox Custom Objects](https://netboxlabs.com/docs/custom-objects/) — Dynamically create new object types to extend the NetBox schema
-* [NetBox Asset Lifecycle](https://netboxlabs.com/docs/asset-lifecycle/) — Track equipment procurement from bills of materials through purchase orders and shipments (Cloud & Enterprise)
-* [NetBox NDX](https://netboxlabs.com/docs/ndx/) — Automatically import devices, modules, and more from the [NetBox Data Exchange](https://netboxlabs.com/ndx/) (Cloud & Enterprise)
-* [NetBox DNS](https://github.com/sys4/netbox-plugin-dns) — Manage DNS zones and records as an authoritative source of truth
-* [NetBox BGP](https://github.com/netbox-community/netbox-bgp) — Document and manage BGP sessions and routing policies
-* [NetBox WDM](https://github.com/jsenecal/netbox-wdm) — Manage WDM wavelengths, ITU channel plans, and wavelength services
-* [NetBox Security](https://github.com/andy-shady-org/netbox-security/) — Model firewall, security, and NAT policies
-* [Browse all plugins](https://netboxlabs.com/plugins/) — Discover the full catalog of available plugins
+## افزونه‌ها
 
-## Get Involved
+افزونه‌ها با افزودن مدل‌ها، نماها و اتصال به سامانه‌های دیگر، قابلیت‌های NetBox را گسترش می‌دهند. چند نمونه در ادامه آمده است.
 
-* Follow [@NetBoxOfficial](https://x.com/NetBoxOfficial) on X!
-* Join the conversation on [the discussion forum](https://github.com/netbox-community/netbox/discussions) and [Slack](https://netdev.chat/)!
-* Already a power user? You can [suggest a feature](https://github.com/netbox-community/netbox/issues/new?assignees=&labels=type%3A+feature&template=feature_request.yaml) or [report a bug](https://github.com/netbox-community/netbox/issues/new?assignees=&labels=type%3A+bug&template=bug_report.yaml) on GitHub.
-* Contributions from the community are encouraged and appreciated! Check out our [contributing guide](CONTRIBUTING.md) to get started.
+* [NetBox Branching](https://netboxlabs.com/docs/branching/) — کار با شاخه‌های مستقل و قابل‌ادغام داده‌های NetBox
+* [NetBox Change Management](https://netboxlabs.com/docs/changes/) — اعمال قواعد بازبینی و تأیید روی تغییرات پیشنهادی شاخه‌ها (Cloud و Enterprise)
+* [NetBox Custom Objects](https://netboxlabs.com/docs/custom-objects/) — تعریف انواع جدید اشیا برای گسترش ساختار دادهٔ NetBox
+* [NetBox Asset Lifecycle](https://netboxlabs.com/docs/asset-lifecycle/) — پیگیری خرید تجهیزات از فهرست مواد تا سفارش خرید و ارسال (Cloud و Enterprise)
+* [NetBox NDX](https://netboxlabs.com/docs/ndx/) — ورود خودکار تجهیزات، ماژول‌ها و سایر داده‌ها از [NetBox Data Exchange](https://netboxlabs.com/ndx/) (Cloud و Enterprise)
+* [NetBox DNS](https://github.com/sys4/netbox-plugin-dns) — مدیریت ناحیه‌ها و رکوردهای DNS به‌عنوان مرجع معتبر
+* [NetBox BGP](https://github.com/netbox-community/netbox-bgp) — مستندسازی و مدیریت نشست‌های BGP و سیاست‌های مسیریابی
+* [NetBox WDM](https://github.com/jsenecal/netbox-wdm) — مدیریت طول‌موج‌های WDM، طرح‌های کانال ITU و سرویس‌های طول‌موج
+* [NetBox Security](https://github.com/andy-shady-org/netbox-security/) — مدل‌سازی دیوارهٔ آتش، سیاست‌های امنیتی و NAT
+* [همهٔ افزونه‌ها](https://netboxlabs.com/plugins/) — مشاهدهٔ فهرست کامل افزونه‌های موجود
 
-## Screenshots
+<a name="get-involved"></a>
+
+## مشارکت
+
+* [@NetBoxOfficial](https://x.com/NetBoxOfficial) را در X دنبال کنید.
+* در [انجمن گفتگو](https://github.com/netbox-community/netbox/discussions) و [Slack](https://netdev.chat/) به بحث‌ها بپیوندید.
+* می‌توانید در گیت‌هاب [قابلیتی پیشنهاد دهید](https://github.com/netbox-community/netbox/issues/new?assignees=&labels=type%3A+feature&template=feature_request.yaml) یا [اشکالی گزارش کنید](https://github.com/netbox-community/netbox/issues/new?assignees=&labels=type%3A+bug&template=bug_report.yaml).
+* پروژه از مشارکت جامعه استقبال می‌کند. برای شروع، [خلاصهٔ فارسی راهنمای مشارکت](docs/contributing-fa.md) و [راهنمای کامل مشارکت](CONTRIBUTING.md) را ببینید.
+
+<a name="screenshots"></a>
+
+## تصاویر محیط برنامه
 
 <p align="center">
-  <strong>NetBox Dashboard (Light Mode)</strong><br />
-  <img src="docs/media/screenshots/home-light.png" width="600" alt="NetBox dashboard (light mode)" />
+  <strong>داشبورد NetBox (حالت روشن)</strong><br />
+  <img src="docs/media/screenshots/home-light.png" width="600" alt="داشبورد NetBox (حالت روشن)" />
 </p>
 <p align="center">
-  <strong>NetBox Dashboard (Dark Mode)</strong><br />
-  <img src="docs/media/screenshots/home-dark.png" width="600" alt="NetBox dashboard (dark mode)" />
+  <strong>داشبورد NetBox (حالت تیره)</strong><br />
+  <img src="docs/media/screenshots/home-dark.png" width="600" alt="داشبورد NetBox (حالت تیره)" />
 </p>
 <p align="center">
-  <strong>Prefixes List</strong><br />
-  <img src="docs/media/screenshots/prefixes-list.png" width="600" alt="Prefixes list" />
+  <strong>فهرست پیشوندها</strong><br />
+  <img src="docs/media/screenshots/prefixes-list.png" width="600" alt="فهرست پیشوندها" />
 </p>
 <p align="center">
-  <strong>Rack View</strong><br />
-  <img src="docs/media/screenshots/rack.png" width="600" alt="Rack view" />
+  <strong>نمای رک</strong><br />
+  <img src="docs/media/screenshots/rack.png" width="600" alt="نمای رک" />
 </p>
 <p align="center">
-  <strong>Cable Trace</strong><br />
-  <img src="docs/media/screenshots/cable-trace.png" width="600" alt="Cable trace" />
+  <strong>ردیابی کابل</strong><br />
+  <img src="docs/media/screenshots/cable-trace.png" width="600" alt="ردیابی کابل" />
 </p>
