@@ -13,7 +13,13 @@
       <div class="text-center mb-4">
         <img src="{% static 'logo_netbox_dark_teal.svg' %}" alt="{% trans "NetBox Logo" %}" height="80" class="hide-theme-dark logo">
         <img src="{% static 'logo_netbox_bright_teal.svg' %}" alt="{% trans "NetBox Logo" %}" height="80" class="hide-theme-light logo">
-        <div class="netbox-edition fw-semibold">{{ settings.RELEASE.edition }}</div>
+        <div class="netbox-edition fw-semibold">
+          {% if settings.RELEASE.edition == "Community" %}
+            {% translate "Community" context "NetBox edition" %}
+          {% else %}
+            {{ settings.RELEASE.edition }}
+          {% endif %}
+        </div>
       </div>
 
       {# Login banner #}

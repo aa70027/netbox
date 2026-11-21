@@ -1448,7 +1448,7 @@ msgstr "مدار"
 
 #: netbox/circuits/models/circuits.py:156
 msgid "circuits"
-msgstr "مدارهای"
+msgstr "مدارها"
 
 #: netbox/circuits/models/circuits.py:185
 msgid "circuit group"
@@ -1605,7 +1605,7 @@ msgstr "ارائه دهنده"
 
 #: netbox/circuits/models/providers.py:43
 msgid "providers"
-msgstr "ارائه دهندگان"
+msgstr "ارائه‌دهندگان"
 
 #: netbox/circuits/models/providers.py:60
 msgid "account ID"
@@ -1617,7 +1617,7 @@ msgstr "حساب ارائه دهنده"
 
 #: netbox/circuits/models/providers.py:84
 msgid "provider accounts"
-msgstr "حساب های ارائه دهنده"
+msgstr "حساب‌های ارائه‌دهندگان"
 
 #: netbox/circuits/models/providers.py:110
 msgid "service ID"
@@ -1629,7 +1629,7 @@ msgstr "شبکه ارائه دهنده"
 
 #: netbox/circuits/models/providers.py:122
 msgid "provider networks"
-msgstr "شبکه های ارائه دهنده"
+msgstr "شبکه‌های ارائه‌دهندگان"
 
 #: netbox/circuits/models/virtual_circuits.py:29
 msgid "virtual circuit type"
@@ -2435,7 +2435,7 @@ msgstr "قبلا"
 #: netbox/core/forms/filtersets.py:174 netbox/core/tables/change_logging.py:30
 #: netbox/extras/forms/model_forms.py:630 netbox/extras/ui/panels.py:390
 msgid "Action"
-msgstr "اکشن"
+msgstr "عملیات"
 
 #: netbox/core/forms/model_forms.py:56 netbox/core/tables/data.py:57
 #: netbox/templates/extras/report/base.html:33
@@ -2480,7 +2480,7 @@ msgstr "برق"
 #: netbox/core/forms/model_forms.py:154 netbox/netbox/navigation/menu.py:174
 #: netbox/templates/core/inc/config_data.html:37
 msgid "IPAM"
-msgstr "IPAM"
+msgstr "مدیریت آدرس‌های IP"
 
 #: netbox/core/forms/model_forms.py:155 netbox/netbox/navigation/menu.py:252
 #: netbox/templates/core/inc/config_data.html:50
@@ -6934,7 +6934,7 @@ msgstr "کابل"
 
 #: netbox/dcim/models/cables.py:177
 msgid "cables"
-msgstr "کابل"
+msgstr "کابل‌ها"
 
 #: netbox/dcim/models/cables.py:314
 msgid "Must specify a unit when setting a cable length"
@@ -7895,7 +7895,7 @@ msgstr "نوع دستگاه"
 
 #: netbox/dcim/models/devices.py:237
 msgid "device types"
-msgstr "انواع دستگاه"
+msgstr "انواع تجهیز"
 
 #: netbox/dcim/models/devices.py:337
 msgid "U height must be in increments of 0.5 rack units."
@@ -8034,7 +8034,7 @@ msgstr "نام دستگاه باید برای هر سایت و مستاجر من
 
 #: netbox/dcim/models/devices.py:827
 msgid "devices"
-msgstr "دستگاه های"
+msgstr "تجهیزات"
 
 #: netbox/dcim/models/devices.py:849
 #, python-brace-format
@@ -8790,7 +8790,7 @@ msgstr "رک"
 
 #: netbox/dcim/models/racks.py:420
 msgid "racks"
-msgstr "رک های"
+msgstr "رک‌ها"
 
 #: netbox/dcim/models/racks.py:432
 #, python-brace-format
@@ -8904,7 +8904,7 @@ msgstr "سایت"
 
 #: netbox/dcim/models/sites.py:288
 msgid "sites"
-msgstr "سایت های"
+msgstr "سایت‌ها"
 
 #: netbox/dcim/models/sites.py:366
 msgid "A location with this name already exists within the specified site."
@@ -13540,7 +13540,7 @@ msgstr "جمع"
 
 #: netbox/ipam/models/ip.py:117
 msgid "aggregates"
-msgstr "مصالح"
+msgstr "بلوک‌های تجمیعی"
 
 #: netbox/ipam/models/ip.py:130
 msgid "Cannot create aggregate with /0 mask."
@@ -13590,7 +13590,7 @@ msgstr "علامت استفاده شده است"
 
 #: netbox/ipam/models/ip.py:293
 msgid "prefixes"
-msgstr "پیشوندهای"
+msgstr "پیشوندها"
 
 #: netbox/ipam/models/ip.py:317
 msgid "Cannot create prefix with /0 mask."
@@ -13645,7 +13645,7 @@ msgstr "محدوده IP"
 
 #: netbox/ipam/models/ip.py:724
 msgid "IP ranges"
-msgstr "محدوده IP"
+msgstr "بازه‌های IP"
 
 #: netbox/ipam/models/ip.py:737
 msgid "Starting and ending IP address versions must match"
@@ -13690,7 +13690,7 @@ msgstr "نام میزبان یا FQDN (به حروف بزرگ و کوچک حسا
 
 #: netbox/ipam/models/ip.py:1036 netbox/ipam/models/services.py:180
 msgid "IP addresses"
-msgstr "آدرس های IP"
+msgstr "آدرس‌های IP"
 
 #: netbox/ipam/models/ip.py:1096
 msgid "Cannot create IP address with /0 mask."
@@ -18295,7 +18295,7 @@ msgstr "تماس"
 
 #: netbox/tenancy/models/contacts.py:124
 msgid "contacts"
-msgstr "مخاطبین"
+msgstr "مخاطبان"
 
 #: netbox/tenancy/models/contacts.py:170
 msgid "contact assignment"
@@ -18340,7 +18340,7 @@ msgstr "مستاجر"
 
 #: netbox/tenancy/models/tenants.py:103
 msgid "tenants"
-msgstr "مستاجرین"
+msgstr "مستأجران"
 
 #: netbox/tenancy/tables/contacts.py:106
 msgid "Contact Title"
@@ -19626,7 +19626,7 @@ msgstr "خوشه"
 
 #: netbox/virtualization/models/clusters.py:117
 msgid "clusters"
-msgstr "خوشه های"
+msgstr "خوشه‌ها"
 
 #: netbox/virtualization/models/clusters.py:143
 #, python-brace-format
@@ -19688,7 +19688,7 @@ msgstr "ماشین مجازی"
 
 #: netbox/virtualization/models/virtualmachines.py:280
 msgid "virtual machines"
-msgstr "ماشین های مجازی"
+msgstr "ماشین‌های مجازی"
 
 #: netbox/virtualization/models/virtualmachines.py:294
 msgid "A virtual machine must be assigned to a site, cluster, or device."
@@ -20621,3 +20621,19 @@ msgstr "گروه شبکه بی سیم را اضافه کنید"
 #: netbox/wireless/views.py:167
 msgid "Attached Interfaces"
 msgstr "رابط های پیوست"
+
+msgid "Welcome!"
+msgstr "خوش آمدید!"
+
+msgid "NetBox News"
+msgstr "خبرهای NetBox"
+
+msgid "DCIM"
+msgstr "مدیریت زیرساخت مرکز داده"
+
+msgid "This is your personal dashboard. Feel free to customize it by rearranging, resizing, or removing widgets. You can also add new widgets using the \"add widget\" button below. Any changes affect only _your_ dashboard, so feel free to experiment!"
+msgstr "این داشبورد شخصی شماست. می‌توانید ابزارک‌ها را جابه‌جا کنید، اندازهٔ آن‌ها را تغییر دهید یا حذفشان کنید. برای افزودن ابزارک، از دکمهٔ «افزودن ابزارک» در پایین صفحه استفاده کنید. این تغییرات فقط روی داشبورد _شما_ اعمال می‌شوند."
+
+msgctxt "NetBox edition"
+msgid "Community"
+msgstr "نسخهٔ جامعهٔ کاربری"

@@ -1,3 +1,4 @@
+from django.utils.translation import gettext_noop
 from jinja2 import ChainableUndefined, DebugUndefined, StrictUndefined, Undefined
 
 from core.events import *
@@ -90,19 +91,25 @@ JINJA_ENV_PARAMS_ALLOWED = {
 }
 
 # Dashboard
+DEFAULT_DASHBOARD_WELCOME = gettext_noop(
+    'This is your personal dashboard. Feel free to customize it by rearranging, resizing, or removing '
+    'widgets. You can also add new widgets using the "add widget" button below. Any changes affect only '
+    '_your_ dashboard, so feel free to experiment!'
+)
+
 DEFAULT_DASHBOARD = [
     {
         'widget': 'extras.BookmarksWidget',
         'width': 4,
         'height': 5,
-        'title': 'Bookmarks',
+        'title': gettext_noop('Bookmarks'),
         'color': 'orange',
     },
     {
         'widget': 'extras.ObjectCountsWidget',
         'width': 4,
         'height': 2,
-        'title': 'Organization',
+        'title': gettext_noop('Organization'),
         'config': {
             'models': [
                 'dcim.site',
@@ -115,21 +122,17 @@ DEFAULT_DASHBOARD = [
         'widget': 'extras.NoteWidget',
         'width': 4,
         'height': 2,
-        'title': 'Welcome!',
+        'title': gettext_noop('Welcome!'),
         'color': 'green',
         'config': {
-            'content': (
-                'This is your personal dashboard. Feel free to customize it by rearranging, resizing, or removing '
-                'widgets. You can also add new widgets using the "add widget" button below. Any changes affect only '
-                '_your_ dashboard, so feel free to experiment!'
-            )
+            'content': DEFAULT_DASHBOARD_WELCOME
         }
     },
     {
         'widget': 'extras.ObjectCountsWidget',
         'width': 4,
         'height': 3,
-        'title': 'IPAM',
+        'title': gettext_noop('IPAM'),
         'config': {
             'models': [
                 'ipam.vrf',
@@ -145,7 +148,7 @@ DEFAULT_DASHBOARD = [
         'widget': 'extras.RSSFeedWidget',
         'width': 4,
         'height': 4,
-        'title': 'NetBox News',
+        'title': gettext_noop('NetBox News'),
         'config': {
             'feed_url': 'https://api.netbox.oss.netboxlabs.com/v1/newsfeed/',
             'max_entries': 10,
@@ -157,7 +160,7 @@ DEFAULT_DASHBOARD = [
         'widget': 'extras.ObjectCountsWidget',
         'width': 4,
         'height': 3,
-        'title': 'Circuits',
+        'title': gettext_noop('Circuits'),
         'config': {
             'models': [
                 'circuits.provider',
@@ -171,7 +174,7 @@ DEFAULT_DASHBOARD = [
         'widget': 'extras.ObjectCountsWidget',
         'width': 4,
         'height': 3,
-        'title': 'DCIM',
+        'title': gettext_noop('DCIM'),
         'config': {
             'models': [
                 'dcim.site',
@@ -186,7 +189,7 @@ DEFAULT_DASHBOARD = [
         'widget': 'extras.ObjectCountsWidget',
         'width': 4,
         'height': 2,
-        'title': 'Virtualization',
+        'title': gettext_noop('Virtualization'),
         'config': {
             'models': [
                 'virtualization.cluster',
@@ -198,7 +201,7 @@ DEFAULT_DASHBOARD = [
         'widget': 'extras.ObjectListWidget',
         'width': 12,
         'height': 5,
-        'title': 'Change Log',
+        'title': gettext_noop('Change Log'),
         'color': 'blue',
         'config': {
             'model': 'core.objectchange',

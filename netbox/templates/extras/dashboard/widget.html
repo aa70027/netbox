@@ -18,13 +18,13 @@
           data-bs-toggle="modal"
           data-bs-target="#htmx-modal"
           class="text-bg-{{ bg_color }}"
-          aria-label="{{ widget.title }} {% trans "widget configuration" %}"
+          aria-label="{{ widget.display_title }} {% trans "widget configuration" %}"
         >
           <i class="mdi mdi-cog"></i>
         </a>
         <div class="card-title flex-fill text-center">
-          {% if widget.title %}
-            <span class="fs-4 fw-bold">{{ widget.title }}</span>
+          {% if widget.display_title %}
+            <span class="fs-4 fw-bold">{{ widget.display_title }}</span>
           {% endif %}
         </div>
         <a href="#"
@@ -33,7 +33,7 @@
           data-bs-toggle="modal"
           data-bs-target="#htmx-modal"
           class="text-bg-{{ bg_color }}"
-          aria-label="{% trans "Close widget" %} {{ widget.title }}"
+          aria-label="{% trans "Close widget" %} {{ widget.display_title }}"
         >
           <i class="mdi mdi-close"></i>
         </a>

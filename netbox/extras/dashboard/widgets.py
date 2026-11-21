@@ -16,6 +16,7 @@ from django.utils.translation import gettext as _
 
 from core.models import ObjectType
 from extras.choices import BookmarkOrderingChoices
+from extras.constants import DEFAULT_DASHBOARD, DEFAULT_DASHBOARD_WELCOME
 from netbox.config import get_config
 from utilities.choices import Choice
 from utilities.html import clean_html
@@ -159,6 +160,13 @@ class DashboardWidget:
         return f'{self.__class__.__module__.split(".")[0]}.{self.__class__.__name__}'
 
     @property
+    def display_title(self):
+        # Built-in titles are stored as source text, including in existing dashboards.
+        if any(item['widget'] == self.name and item['title'] == self.title for item in DEFAULT_DASHBOARD):
+            return _(self.title)
+        return self.title
+
+    @property
     def form_data(self):
         return {
             'title': self.title,
@@ -178,7 +186,10 @@ class NoteWidget(DashboardWidget):
         )
 
     def render(self, request):
-        return render_markdown(self.config.get('content'))
+        content = self.config.get('content')
+        if content == DEFAULT_DASHBOARD_WELCOME:
+            content = _(content)
+        return render_markdown(content)
 
 
 @register_widget
