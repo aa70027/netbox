@@ -37,8 +37,8 @@ Blocks:
         {# Logo #}
         <h1 class="navbar-brand pb-0">
           <a href="{% url 'home' %}">
-            <img src="{% static 'logo_netbox_dark_teal.svg' %}" alt="{% trans "NetBox Logo" %}" class="navbar-brand-image hide-theme-dark">
-            <img src="{% static 'logo_netbox_bright_teal.svg' %}" alt="{% trans "NetBox Logo" %}" class="navbar-brand-image hide-theme-light">
+            <img src="{% static 'sima-negar-logo.svg' %}" alt="Sima Negar"
+                 width="200" height="54" class="img-fluid rounded bg-white">
             <div class="netbox-edition fw-semibold text-center fs-5 my-1">
               {% if settings.RELEASE.edition == "Community" %}
                 {% translate "Community" context "NetBox edition" %}
