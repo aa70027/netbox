@@ -1,6 +1,7 @@
+{% load i18n %}
 {% if group %}
   {# Display an object with its parent group #}
-  <ol class="breadcrumb" aria-label="breadcrumbs">
+  <ol class="breadcrumb" aria-label="{% translate 'Breadcrumbs' %}">
     <li class="breadcrumb-item">
       {% if linkify %}{{ group|linkify }}{% else %}{{ group }}{% endif %}
     </li>

@@ -12,7 +12,7 @@
 
 {% block page-header %}
   <div class="container-fluid mt-2">
-    <nav class="breadcrumb-container" aria-label="breadcrumb">
+    <nav class="breadcrumb-container" aria-label="{% translate 'Breadcrumbs' %}">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{% url 'extras:script_list' %}">{% trans "Scripts" %}</a></li>
         <li class="breadcrumb-item"><a href="{% url 'extras:script_list' %}#module.{{ script.module }}">{{ script.module|bettertitle }}</a></li>

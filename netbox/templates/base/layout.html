@@ -28,7 +28,7 @@ Blocks:
       <div class="container-fluid">
 
         {# Menu toggle (mobile view) #}
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="{% translate 'Toggle navigation' %}">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -91,7 +91,7 @@ Blocks:
               <span class="input-icon-addon">
                 <i class="mdi mdi-magnify"></i>
               </span>
-              <input type="text" name="q" value="" class="form-control" placeholder="Search…" aria-label="Search NetBox">
+              <input type="text" name="q" value="" class="form-control" placeholder="{% translate 'Search…' %}" aria-label="{% translate 'Search NetBox' %}">
             </div>
           </form>
         </div>
@@ -114,11 +114,11 @@ Blocks:
 
         {# Alerts #}
         {% if settings.DEBUG and not settings.DEVELOPER %}
-          {% include 'inc/alerts/warning.html' with title="Debug mode is enabled" message="Performance may be limited. Debugging should never be enabled on a production system." %}
+          {% include 'inc/alerts/warning.html' with title=_("Debug mode is enabled") message=_("Performance may be limited. Debugging should never be enabled on a production system.") %}
         {% endif %}
 
         {% if config.MAINTENANCE_MODE and config.BANNER_MAINTENANCE %}
-          {% include 'inc/alerts/warning.html' with title="Maintenance Mode" message=config.BANNER_MAINTENANCE|safe %}
+          {% include 'inc/alerts/warning.html' with title=_("Maintenance Mode") message=config.BANNER_MAINTENANCE|safe %}
         {% endif %}
         {# /Alerts #}
 

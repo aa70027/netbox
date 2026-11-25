@@ -20637,3 +20637,57 @@ msgstr "این داشبورد شخصی شماست. می‌توانید ابزا�
 msgctxt "NetBox edition"
 msgid "Community"
 msgstr "نسخهٔ جامعهٔ کاربری"
+
+msgid "You can install this plugin from the command line with PyPI."
+msgstr "می‌توانید این افزونه را از طریق خط فرمان و با استفاده از PyPI نصب کنید."
+
+msgid "The following commands may be helpful. See the plugin’s own documentation and the NetBox plugin installation guide."
+msgstr "فرمان‌های زیر برای نصب آماده شده‌اند. مستندات افزونه و راهنمای نصب افزونهٔ NetBox را هم ببینید."
+
+msgid "Plugin documentation"
+msgstr "مستندات افزونه"
+
+msgid "NetBox plugin installation guide"
+msgstr "راهنمای نصب افزونهٔ NetBox"
+
+msgid "1. Enter the NetBox virtual environment and install the plugin package:"
+msgstr "۱. محیط مجازی NetBox را فعال و بستهٔ افزونه را نصب کنید."
+
+msgid "2. Add the plugin to the PLUGINS list in configuration.py:"
+msgstr "۲. افزونه را به فهرست PLUGINS در configuration.py اضافه کنید."
+
+msgid "3. In the virtual environment, run database migrations and collect static files:"
+msgstr "۳. در محیط مجازی، مهاجرت‌های پایگاه داده را اجرا و فایل‌های ایستا را جمع‌آوری کنید."
+
+msgid "4. Restart the NetBox services to complete the plugin installation:"
+msgstr "۴. برای تکمیل نصب افزونه، سرویس‌های NetBox را راه‌اندازی مجدد کنید."
+
+msgid "Object filters"
+msgstr "فیلترهای رکوردها"
+
+msgid "Breadcrumbs"
+msgstr "مسیر صفحه"
+
+msgid "Rack navigation"
+msgstr "پیمایش رک"
+
+msgid "Toggle navigation"
+msgstr "باز یا بسته کردن منو"
+
+msgid "Creating API Tokens"
+msgstr "ایجاد توکن‌های API"
+
+msgid "Non-superusers should generally create and modify API tokens under their user profile."
+msgstr "کاربران عادی معمولاً باید توکن‌های API را در نمایهٔ کاربری خود ایجاد و ویرایش کنند."
+
+msgid "Debug mode is enabled"
+msgstr "حالت اشکال‌زدایی فعال است"
+
+msgid "Performance may be limited. Debugging should never be enabled on a production system."
+msgstr "ممکن است عملکرد کند شود. حالت اشکال‌زدایی را در محیط عملیاتی غیرفعال نگه دارید."
+
+msgid "Rendered Context"
+msgstr "زمینهٔ تولیدشده"
+
+msgid "Local Context"
+msgstr "زمینهٔ محلی"

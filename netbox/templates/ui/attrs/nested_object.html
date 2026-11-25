@@ -1,4 +1,5 @@
-<ol class="breadcrumb" aria-label="breadcrumbs">
+{% load i18n %}
+<ol class="breadcrumb" aria-label="{% translate 'Breadcrumbs' %}">
   {% for node in nodes %}
     <li class="breadcrumb-item">
       {% if forloop.last and colored and node.color %}

@@ -13,6 +13,7 @@ from django.db.models import Model
 from django.template.loader import render_to_string
 from django.urls import NoReverseMatch, resolve
 from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy
 
 from core.models import ObjectType
 from extras.choices import BookmarkOrderingChoices
@@ -204,7 +205,7 @@ class ObjectCountsWidget(DashboardWidget):
         )
         filters = forms.JSONField(
             required=False,
-            label='Object filters',
+            label=gettext_lazy('Object filters'),
             help_text=_("Filters to apply when counting the number of objects")
         )
 
