@@ -10,6 +10,10 @@
 <html
   lang="{{ current_language }}"
   dir="{% if current_language_bidi %}rtl{% else %}ltr{% endif %}"
+  data-select-no-results="{% translate 'No results found' %}"
+  data-select-add="{% translate 'Add' %}"
+  data-select-clear="{% translate 'Clear All' %}"
+  data-select-remove="{% translate 'Remove' %}"
   data-netbox-url-name="{{ request.resolver_match.url_name }}"
   data-netbox-version="{{ settings.VERSION }}"
   {% if request.user.is_authenticated %}
@@ -52,6 +56,7 @@
     />
     {% if current_language == "fa" or current_language|slice:":3" == "fa-" %}
       <link rel="stylesheet" href="{% static_with_params 'fonts/vazir/vazir.css' v=settings.RELEASE.version %}" />
+      <script defer src="{% static_with_params 'persian-date.js' v=settings.RELEASE.version %}"></script>
     {% endif %}
     <link rel="icon" type="image/png" href="{% static 'netbox.ico' %}" />
     <link rel="apple-touch-icon" type="image/png" href="{% static 'netbox_touch-icon-180.png' %}" />

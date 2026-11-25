@@ -11,6 +11,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render, resolve_url
 from django.urls import reverse, reverse_lazy
+from django.utils import translation
 from django.utils.decorators import method_decorator
 from django.utils.translation import gettext_lazy as _
 from django.views.decorators.cache import never_cache
@@ -49,8 +50,14 @@ class LoginView(View):
     template_name = 'login.html'
 
     @method_decorator(sensitive_post_parameters('password'))
-    def dispatch(self, *args, **kwargs):
-        return super().dispatch(*args, **kwargs)
+    def dispatch(self, request, *args, **kwargs):
+        default_language = settings.LANGUAGE_CODE.lower().split('-', 1)[0]
+        if settings.USE_I18N and default_language == 'fa' and not request.user.is_authenticated:
+            with translation.override('fa'):
+                response = super().dispatch(request, *args, **kwargs)
+                response.headers.setdefault('Content-Language', 'fa')
+                return response
+        return super().dispatch(request, *args, **kwargs)
 
     def gen_auth_data(self, name, url, params):
         display_name, icon_source = get_auth_backend_display(name)

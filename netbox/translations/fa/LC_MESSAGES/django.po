@@ -743,7 +743,7 @@ msgstr "وضعیت"
 #: netbox/wireless/forms/filtersets.py:44
 #: netbox/wireless/forms/filtersets.py:110
 msgid "Tenant"
-msgstr "مستأجر"
+msgstr "سازمان"
 
 #: netbox/circuits/forms/bulk_edit.py:140
 #: netbox/circuits/forms/filtersets.py:199
@@ -860,7 +860,7 @@ msgstr "ویژگی های"
 #: netbox/vpn/forms/model_forms.py:473 netbox/wireless/forms/model_forms.py:79
 #: netbox/wireless/forms/model_forms.py:214
 msgid "Tenancy"
-msgstr "مستأجری"
+msgstr "تفکیک سازمانی"
 
 #: netbox/circuits/forms/bulk_edit.py:182
 #: netbox/circuits/forms/bulk_edit.py:308 netbox/dcim/forms/bulk_create.py:39
@@ -1053,7 +1053,7 @@ msgstr "وضعیت عملیاتی"
 #: netbox/vpn/forms/bulk_import.py:62 netbox/wireless/forms/bulk_import.py:60
 #: netbox/wireless/forms/bulk_import.py:140
 msgid "Assigned tenant"
-msgstr "مستأجر تخصیص‌یافته"
+msgstr "سازمان تخصیص‌یافته"
 
 #: netbox/circuits/forms/bulk_import.py:139
 msgid "Termination type (app & model)"
@@ -4534,12 +4534,12 @@ msgstr "شاسی مجازی"
 #: netbox/dcim/filtersets.py:2038 netbox/dcim/filtersets.py:2816
 #: netbox/tenancy/filtersets.py:271
 msgid "Tenant (ID)"
-msgstr "مستاجر (شناسه)"
+msgstr "سازمان (شناسه)"
 
 #: netbox/dcim/filtersets.py:2045 netbox/dcim/filtersets.py:2823
 #: netbox/extras/filtersets.py:844 netbox/tenancy/filtersets.py:278
 msgid "Tenant (slug)"
-msgstr "مستاجر (شناسهٔ متنی)"
+msgstr "سازمان (شناسهٔ متنی)"
 
 #: netbox/dcim/filtersets.py:2066
 msgid "Module (ID)"
@@ -4758,7 +4758,7 @@ msgstr "دستگاه نصب شده (نام)"
 
 #: netbox/dcim/filtersets.py:2764
 msgid "Master (ID)"
-msgstr "Master (ID)"
+msgstr "اصلی (شناسه)"
 
 #: netbox/dcim/filtersets.py:2771
 msgid "Master (name)"
@@ -5631,7 +5631,7 @@ msgstr "واحد برای وزن رک"
 
 #: netbox/dcim/forms/bulk_import.py:288
 msgid "Name of assigned tenant"
-msgstr "نام مستأجر واگذار شده"
+msgstr "نام سازمان تخصیص‌یافته"
 
 #: netbox/dcim/forms/bulk_import.py:291 netbox/dcim/forms/filtersets.py:434
 #: netbox/dcim/forms/filtersets.py:539 netbox/dcim/ui/panels.py:71
@@ -6251,7 +6251,7 @@ msgstr "جانبی {side_upper}: ستون side_{side}_name باید هنگام �
 #: netbox/dcim/tables/devices.py:1176
 #: netbox/templates/dcim/panels/virtual_chassis_members.html:10
 msgid "Master"
-msgstr "Master"
+msgstr "اصلی"
 
 #: netbox/dcim/forms/bulk_import.py:2199
 msgid "Master device"
@@ -8030,7 +8030,7 @@ msgstr "طول جغرافیایی"
 
 #: netbox/dcim/models/devices.py:815
 msgid "Device name must be unique per site and tenant."
-msgstr "نام دستگاه باید برای هر سایت و مستاجر منحصر به فرد باشد."
+msgstr "نام دستگاه باید برای هر سایت و سازمان منحصر به فرد باشد."
 
 #: netbox/dcim/models/devices.py:827
 msgid "devices"
@@ -10403,12 +10403,12 @@ msgstr "نوع خوشه (شناسهٔ متنی)"
 #: netbox/extras/filtersets.py:827 netbox/tenancy/forms/forms.py:17
 #: netbox/tenancy/forms/forms.py:41
 msgid "Tenant group"
-msgstr "گروه مستاجر"
+msgstr "گروه سازمانی"
 
 #: netbox/extras/filtersets.py:833 netbox/tenancy/filtersets.py:212
 #: netbox/tenancy/filtersets.py:233
 msgid "Tenant group (slug)"
-msgstr "گروه مستأجر (شناسهٔ متنی)"
+msgstr "گروه سازمانی (شناسهٔ متنی)"
 
 #: netbox/extras/filtersets.py:849 netbox/extras/forms/model_forms.py:703
 #: netbox/extras/ui/panels.py:406
@@ -10880,7 +10880,7 @@ msgstr "خوشه‌ها"
 
 #: netbox/extras/forms/filtersets.py:524 netbox/extras/forms/model_forms.py:795
 msgid "Tenant groups"
-msgstr "گروه های مستاجر"
+msgstr "گروه‌های سازمانی"
 
 #: netbox/extras/forms/filtersets.py:609
 msgid "Creation"
@@ -11072,7 +11072,7 @@ msgstr "نمایه زمینه پیکربندی"
 #: netbox/extras/forms/model_forms.py:800 netbox/netbox/navigation/menu.py:29
 #: netbox/tenancy/tables/tenants.py:18
 msgid "Tenants"
-msgstr "مستأجران"
+msgstr "سازمان‌ها"
 
 #: netbox/extras/forms/model_forms.py:844
 msgid "Data is populated from the remote source selected below."
@@ -14956,7 +14956,7 @@ msgstr "گروه‌های سایت"
 
 #: netbox/netbox/navigation/menu.py:30
 msgid "Tenant Groups"
-msgstr "گروه‌های مستأجران"
+msgstr "گروه‌های سازمانی"
 
 #: netbox/netbox/navigation/menu.py:37
 msgid "Contact Groups"
@@ -18003,7 +18003,7 @@ msgstr "یک مخاطب اضافه کنید"
 
 #: netbox/templates/tenancy/tenantgroup.html:7
 msgid "Add Tenant"
-msgstr "مستاجر را اضافه کنید"
+msgstr "سازمان را اضافه کنید"
 
 #: netbox/templates/ui/attrs/address.html:8
 #: netbox/templates/ui/attrs/gps_coordinates.html:6
@@ -18202,23 +18202,23 @@ msgstr "گروه تماس"
 
 #: netbox/tenancy/filtersets.py:192
 msgid "Parent tenant group (ID)"
-msgstr "گروه مستأجر والدین (ID)"
+msgstr "گروه سازمانی والد (ID)"
 
 #: netbox/tenancy/filtersets.py:199
 msgid "Parent tenant group (slug)"
-msgstr "گروه مستأجر والدین (شناسهٔ متنی)"
+msgstr "گروه سازمانی والد (شناسهٔ متنی)"
 
 #: netbox/tenancy/filtersets.py:205 netbox/tenancy/filtersets.py:226
 msgid "Tenant group (ID)"
-msgstr "گروه مستاجر (شناسه)"
+msgstr "گروه سازمانی (شناسه)"
 
 #: netbox/tenancy/filtersets.py:259
 msgid "Tenant Group (ID)"
-msgstr "گروه مستاجر (شناسه)"
+msgstr "گروه سازمانی (شناسه)"
 
 #: netbox/tenancy/filtersets.py:266
 msgid "Tenant Group (slug)"
-msgstr "گروه مستاجر (شناسهٔ متنی)"
+msgstr "گروه سازمانی (شناسهٔ متنی)"
 
 #: netbox/tenancy/forms/bulk_edit.py:84
 msgid "Add groups"
@@ -18250,7 +18250,7 @@ msgstr "مخاطب اختصاص داده شده"
 #: netbox/tenancy/forms/filtersets.py:40 netbox/tenancy/forms/model_forms.py:39
 #: netbox/tenancy/tables/columns.py:37 netbox/tenancy/tables/columns.py:47
 msgid "Tenant Group"
-msgstr "گروه مستاجر"
+msgstr "گروه سازمانی"
 
 #: netbox/tenancy/forms/filtersets.py:76 netbox/tenancy/forms/forms.py:68
 #: netbox/tenancy/forms/model_forms.py:80
@@ -18312,11 +18312,11 @@ msgstr "مخاطبین را نمی توان به این نوع شی ({type}) ا�
 
 #: netbox/tenancy/models/tenants.py:38
 msgid "tenant group"
-msgstr "گروه مستاجر"
+msgstr "گروه سازمانی"
 
 #: netbox/tenancy/models/tenants.py:39
 msgid "tenant groups"
-msgstr "گروه های مستاجر"
+msgstr "گروه‌های سازمانی"
 
 #: netbox/tenancy/models/tenants.py:51
 #, python-brace-format
@@ -18324,23 +18324,23 @@ msgid ""
 "Unable to delete tenant group {tenant_group}. Ungrouping its tenants, "
 "including those of any nested groups, would create duplicate tenant names or "
 "slugs."
-msgstr "حذف گروه مستاجر {tenant_group} امکان پذیر نیست. عدم گروه بندی مستاجرین آن، از جمله مستاجران هر گروه تو در تو، نام مستاجر یا راب های تکراری ایجاد می کند."
+msgstr "حذف گروه سازمانی {tenant_group} ممکن نیست. خارج کردن سازمان‌های این گروه و زیرگروه‌های آن باعث تکرار نام یا شناسهٔ متنی سازمان‌ها می‌شود."
 
 #: netbox/tenancy/models/tenants.py:93
 msgid "Tenant name must be unique per group."
-msgstr "نام مستأجر باید در هر گروه منحصر به فرد باشد."
+msgstr "نام سازمان باید در هر گروه منحصر به فرد باشد."
 
 #: netbox/tenancy/models/tenants.py:99
 msgid "Tenant slug must be unique per group."
-msgstr "راب مستاجر باید در هر گروه منحصر به فرد باشد."
+msgstr "شناسهٔ متنی سازمان باید در هر گروه یکتا باشد."
 
 #: netbox/tenancy/models/tenants.py:102
 msgid "tenant"
-msgstr "مستاجر"
+msgstr "سازمان"
 
 #: netbox/tenancy/models/tenants.py:103
 msgid "tenants"
-msgstr "مستأجران"
+msgstr "سازمان‌ها"
 
 #: netbox/tenancy/tables/contacts.py:106
 msgid "Contact Title"
@@ -18368,7 +18368,7 @@ msgstr "توضیحات تماس"
 
 #: netbox/tenancy/views.py:72
 msgid "Add Tenant Group"
-msgstr "گروه مستاجر را اضافه کنید"
+msgstr "گروه سازمانی را اضافه کنید"
 
 #: netbox/tenancy/views.py:259
 msgid "Add Contact Group"
@@ -19676,11 +19676,11 @@ msgstr "دیسک"
 
 #: netbox/virtualization/models/virtualmachines.py:269
 msgid "Virtual machine name must be unique per cluster and tenant."
-msgstr "نام ماشین مجازی باید در هر خوشه و مستاجر منحصر به فرد باشد."
+msgstr "نام ماشین مجازی باید در هر خوشه و سازمان منحصر به فرد باشد."
 
 #: netbox/virtualization/models/virtualmachines.py:276
 msgid "Virtual machine name must be unique per device and tenant."
-msgstr "نام ماشین مجازی باید برای هر دستگاه و مستاجر منحصر به فرد باشد."
+msgstr "نام ماشین مجازی باید برای هر دستگاه و سازمان منحصر به فرد باشد."
 
 #: netbox/virtualization/models/virtualmachines.py:279
 msgid "virtual machine"
@@ -20691,3 +20691,13 @@ msgstr "زمینهٔ تولیدشده"
 
 msgid "Local Context"
 msgstr "زمینهٔ محلی"
+
+msgid "Get NetBox Cloud"
+msgstr "دریافت NetBox Cloud"
+
+msgid "Get NetBox Enterprise"
+msgstr "دریافت NetBox Enterprise"
+
+#: netbox/templates/base/base.html
+msgid "No results found"
+msgstr "نتیجه‌ای یافت نشد"

@@ -5,6 +5,7 @@
 {% load plugins %}
 {% load static %}
 {% load i18n %}
+{% load tz %}
 
 {% comment %}
 Blocks:
@@ -18,8 +19,9 @@ Blocks:
 
   <div class="page">
 
+    {% get_current_language_bidi as sidebar_rtl %}
     {# Sidebar #}
-    <aside class="navbar navbar-vertical navbar-expand-lg d-print-none">
+    <aside class="navbar navbar-vertical navbar-expand-lg d-print-none{% if sidebar_rtl %} navbar-right{% endif %}">
 
       {% if settings.RELEASE.features.commercial %}
         <img class="motif" src="{% static 'motif.svg' %}" alt="{% trans "NetBox Motif" %}">
@@ -63,8 +65,8 @@ Blocks:
             {{ settings.RELEASE.name }}
             {% if not settings.RELEASE.features.commercial and not settings.ISOLATED_DEPLOYMENT %}
               <div>
-                <a href="https://netboxlabs.com/netbox-cloud/" class="text-muted">{% trans "Get" %} Cloud</a> |
-                <a href="https://netboxlabs.com/netbox-enterprise/" class="text-muted">{% trans "Get" %} Enterprise</a>
+                <a href="https://netboxlabs.com/netbox-cloud/" class="text-muted">{% translate "Get NetBox Cloud" %}</a> |
+                <a href="https://netboxlabs.com/netbox-enterprise/" class="text-muted">{% translate "Get NetBox Enterprise" %}</a>
               </div>
             {% endif %}
           </div>
@@ -219,7 +221,15 @@ Blocks:
 
             {# Footer text #}
             <ul class="list-inline list-inline-dots fs-5 mb-0" id="footer-stamp" hx-swap-oob="true">
-              <li class="list-inline-item">{% now 'Y-m-d H:i:s T' %}</li>
+              {% if sidebar_rtl %}
+                {% get_current_timezone as footer_timezone %}
+                <li class="list-inline-item">فارسی</li>
+                <li class="list-inline-item">
+                  <time datetime="{% now 'c' %}" data-persian-timezone="{{ footer_timezone }}">{% now 'Y-m-d H:i:s T' %}</time>
+                </li>
+              {% else %}
+                <li class="list-inline-item">{% now 'Y-m-d H:i:s T' %}</li>
+              {% endif %}
               <li class="list-inline-item">{{ settings.HOSTNAME }}</li>
             </ul>
             {# /Footer text #}

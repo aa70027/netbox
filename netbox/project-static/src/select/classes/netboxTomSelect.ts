@@ -1,4 +1,6 @@
 import TomSelect from 'tom-select';
+import type { RecursivePartial, TomInput, TomOption, TomSettings } from 'tom-select/dist/cjs/types';
+import type { escape_html } from 'tom-select/src/utils';
 
 /**
  * Extends TomSelect to work around a browser autofill bug where Edge's "last used" autofill
@@ -18,6 +20,20 @@ import TomSelect from 'tom-select';
  * NetBox issue:  https://github.com/netbox-community/netbox/issues/20077
  */
 export class NetBoxTomSelect extends TomSelect {
+  constructor(input: string | TomInput, settings: RecursivePartial<TomSettings>) {
+    const labels = document.documentElement.dataset;
+    super(input, {
+      ...settings,
+      render: {
+        no_results: (_data: TomOption, escape: typeof escape_html) =>
+          `<div class="no-results">${escape(labels.selectNoResults ?? 'No results found')}</div>`,
+        option_create: (data: TomOption, escape: typeof escape_html) =>
+          `<div class="create">${escape(labels.selectAdd ?? 'Add')} <strong>${escape(data.input)}</strong>&hellip;</div>`,
+        ...settings.render,
+      },
+    });
+  }
+
   setup(): void {
     super.setup();
 
